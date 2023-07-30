@@ -2,8 +2,6 @@
 
 use Speradevlop\Api\Controllers\CalculatorController;
 
-
-
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addGroup('/api', function(FastRoute\RouteCollector $r) {
         $r->get('/', [CalculatorController::class, 'index']);
