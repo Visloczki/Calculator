@@ -108,7 +108,7 @@ class Calculator {
       let template = ""
 
       try {
-          const response = await fetch('http://api.dxapi.nhely.hu/api/getAllCalculate')
+          const response = await fetch('http://api.dxapi.nhely.hu/api/get-all-calculates')
           const resp_data = await response.json()
          
           for (const item of resp_data) {
