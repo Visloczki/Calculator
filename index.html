@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Számológép</title>
+    <link rel="stylesheet" href="css/style.css">
+<!--     <script src="./js/app.js" defer></script> -->
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <div data-previous-operand class="prev-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-clear-all class="colspan-2">C</button>
+        <button data-delete>DEL</button>
+        <button data-operand>/</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operand>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operand>-</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operand>+</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equal class="colspan-2">=</button>
+    </div>
+
+    <div id="results" class="statics-table">
+        <table>
+            <thead>
+            <tr>
+                <th>Legnagyobb végeredmény</th>
+                <th>Legkissebb végeredmény</th>
+                <th>Összérték átlag</th>
+                <th>Összes adata SUM</th>
+                <th>Leggyakrabban használt operátor</th>
+            </tr>
+            </thead>
+            <tbody class="centered-content" data-statics-result>
+            </tbody>
+        </table>
+        <h3 style="margin: 1.25rem 0; text-align: center;">Összes számítás</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Első szám</th>
+                <th>Második szám</th>
+                <th>Végeredmény</th>
+                <th>Művelet</th>
+            </tr>
+            </thead>
+            <tbody class="centered-content overflow-auto" data-all-results>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
